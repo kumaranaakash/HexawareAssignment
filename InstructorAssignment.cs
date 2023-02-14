@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace assignment1
+namespace InstructorAssignment
 {
     internal class Instructor
     {
@@ -12,18 +12,18 @@ namespace assignment1
         public int experience { get; set; }
        public string[] instructorskill { get; set;}
 
-        public Instructor(string name, float feedback, int exp, string[] instructorskill)
+        public Instructor(string name, float feedback, int exp, string[] instrucskill)
         {
             this.Name = name;
             this.avgfeedback = feedback;
             this.experience = exp;
-            this.instructorskill = instructorskill;
+            this.instruskill = instrucskill;
 
         }
-        public bool CheckSkill(string technology)
+        public CheckSkill(string technology)
         {  
            
-            if(validateligibility() && instructorskill.Contains(technology))
+            if(validateligibility() && instrucskill.Contains(technology))
             {
                 return true;
             }
@@ -34,7 +34,7 @@ namespace assignment1
             
         }
 
-        public bool validateligibility()
+        public validateligibility()
         {
             
                 if (experience > 3 && avgfeedback >= 4.5)
