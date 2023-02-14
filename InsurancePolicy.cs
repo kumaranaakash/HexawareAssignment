@@ -1,7 +1,12 @@
 using System;
 using System.Linq;
+
+
 namespace InsurancePolicy
-public class Insurance
+    
+    
+    
+internal class program
 {
     private string consumerName;
     private int age;
